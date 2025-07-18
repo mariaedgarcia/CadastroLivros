@@ -10,13 +10,32 @@ public class Livro{
     private int edicao;
 
     // Método construtor (Serve para construir seu objeto com valores default)
+    // O que difere um metodo construtor do outro é os parametros
     Livro(){
         this.codigo = 0;
-        this.titulo = "";
+        this.titulo = "Nenhum Titulo";
         this.autor = "";
         this.editora = "";
         this.numPaginas = 0;
         this.edicao = 0;
+    }
+
+    Livro(int codigo, String titulo){
+        this.codigo = codigo;
+        this.titulo = titulo;
+        this.autor = "";
+        this.editora = "";
+        this.numPaginas = 0;
+        this.edicao = 0;
+    }
+
+    Livro(int codigo, String titulo, String autor, String editora, int numPaginas, int edicao){
+        this.codigo = codigo;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.editora = editora;
+        this.numPaginas = numPaginas;
+        this.edicao = edicao;
     }
 
     // Métodos

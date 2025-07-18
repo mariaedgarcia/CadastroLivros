@@ -91,9 +91,34 @@ public class SistemaLivros{
 
         // Exemplo método construtor
         Livro novoLivro = new Livro();
+        System.out.println("----------------------------------------");
         System.out.println("Novo livro: "+novoLivro.getTitulo());
         novoLivro.setTitulo("Novo titulo legal");
         System.out.println("Novo livro: "+novoLivro.getTitulo());
+        System.out.println("----------------------------------------");
 
+        // Metodo construtor com parametros
+        Livro livro2 = new Livro(99, "Titanic");
+        System.out.println("Livro 2: "+livro2.getTitulo());
+        System.out.println("----------------------------------------");
+
+        // Metodo construtor com todos os parametros
+        Livro livro3 = new Livro(1,
+                                "A menina que roubava livros",
+                                "Andreisse",
+                                "Bosch",
+                                600,
+                                1);
+
+        LivroBiblioteca LivroBiblioteca2 = new LivroBiblioteca(2,
+                                                            "Crepusculo",
+                                                            "Vampiros",
+                                                            "DUDAO SA",
+                                                            20,
+                                                            3,
+                                                            "Andra 3",
+                                                            "Romance",
+                                                            5,
+                                                            "Marcelo");
     }
 }
